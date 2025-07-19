@@ -24,78 +24,67 @@ export const AcmeLogo = () => {
   );
 };
 
- function Demo() {
+function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = [
-    "Product",
-    "Pricing",
-    "Customers",
-    "Solutions",
-    "Log Out",
-  ];
+  const menuItems = ["Product", "Pricing", "Customers", "Solutions", "Log Out"];
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-[#002228]">
       <NavbarContent>
-        
         <NavbarBrand>
-          
-          <img src="Logo.png"/>
+          <img src="Logo.png" />
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4 " justify="center ">
-
-        <NavbarItem >
+        <NavbarItem>
           <Link className="text-white" href="#">
-           About Us
+            About Us
           </Link>
         </NavbarItem>
 
-        <NavbarItem >
+        <NavbarItem>
           <Link className="text-white" href="#">
             Pricing
           </Link>
         </NavbarItem>
 
-
         <NavbarItem>
-          <Link className="text-white"  href="#">
+          <Link className="text-white" href="#">
             Customers
           </Link>
         </NavbarItem>
 
-          <NavbarItem>
-          <Link className="text-white"  href="#">
-           Solutions
+        <NavbarItem>
+          <Link className="text-white" href="#">
+            Solutions
           </Link>
         </NavbarItem>
-
-
-
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden md:flex  ">
-       
-      <Button  variant="solid" className="text-black bg-[#0FF1F6]" >
-       Book a Demo
-      </Button>
-    
+          <Button variant="solid" className="text-black bg-[#0FF1F6]">
+            Book a Demo
+          </Button>
         </NavbarItem>
-        <NavbarItem  className="hidden md:flex">
-        <Button  variant="bordered" className="text-white">
-        Contact Us
-      </Button>
+        <NavbarItem className="hidden md:flex">
+          <Button variant="bordered" className="text-white">
+            Contact Us
+          </Button>
         </NavbarItem>
       </NavbarContent>
-      <NavbarMenu className=" " >
+      <NavbarMenu className=" ">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
               className="w-full "
               color={
-                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
+                index === 2
+                  ? "primary"
+                  : index === menuItems.length - 1
+                  ? "danger"
+                  : "foreground"
               }
               href="#"
               size="lg"
@@ -103,17 +92,14 @@ export const AcmeLogo = () => {
               {item}
             </Link>
           </NavbarMenuItem>
-          
         ))}
-       
       </NavbarMenu>
-       <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden text-white "
-        />
+      <NavbarMenuToggle
+        aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+        className="sm:hidden text-white "
+      />
     </Navbar>
   );
 }
 
-
-export default Demo
+export default Header;
