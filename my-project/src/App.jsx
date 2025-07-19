@@ -5,6 +5,7 @@ import Company from './Component/Company'
 import Header from './Component/Header'
 import Hero from './Component/Hero'
 import MyCard from './Component/Card'
+import Trian from './Component/Trian'
 
 function App() {
  
@@ -15,6 +16,7 @@ function App() {
      <Hero/>
      <Company/>
      <MyCard/>
+     <Trian/>
     </>
   )
 }

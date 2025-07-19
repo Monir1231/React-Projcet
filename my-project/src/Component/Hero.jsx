@@ -1,10 +1,11 @@
 import React from "react";
 import { Button } from "@heroui/react";
+import { h1 } from "framer-motion/client";
 
 function Hero() {
   return (
     <>
-      <section className="bg-black lg:py-6 max-w-[1440px] mx-auto">
+      <section className="bg-black lg:py-6 max-w-[1440px] mx-auto bg-[url(image2.png)] bg-center bg-cover">
         <div className=" px-2.5 lg:px-10 xl:px-20 text-white py-12 lg:py-20 text-center md:text-left">
           <h4 className="text-[#0FF1F6] text-base lg:text-2xl font-semibold">
             AI SDRs (aiDRs)
@@ -32,5 +33,6 @@ function Hero() {
     </>
   );
 }
+
 
 export default Hero;
