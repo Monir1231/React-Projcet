@@ -20,7 +20,7 @@ function MyCard() {
         }
     ]
   return (
-    <section className='py-20 lg:py-20 xl:py-24 bg-[#002228]'>
+    <section className='py-20 lg:pt-20 xl:pt-24 bg-[#002228]'>
          <div className='px-3 md:mx-8 lg:px-20 flex flex-col  lg:flex-row items-center justify-between gap-12'>
           {cardList.map((item,index)=>(
                  <div key={index} className='  '>
