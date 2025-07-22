@@ -33,7 +33,7 @@ function Header() {
     <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-[#002228]">
       <NavbarContent>
         <NavbarBrand>
-          <img src="Logo.png" />
+          <img className="md:w-[120px]" src="Logo.png" />
         </NavbarBrand>
       </NavbarContent>
 

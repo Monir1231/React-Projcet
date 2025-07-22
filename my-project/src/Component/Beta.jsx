@@ -3,7 +3,7 @@ import { Button } from "@heroui/react";
 
 function Beta() {
   return (
-    <section className=" py-16 md:py-20 lg:py-30 bg-[#002228] ">
+    <section className=" py-16 md:py-20 lg:py-25 bg-[#002228] ">
       <div className="text-center px-4 md:px-6 lg:px-12 xl:px-20">
         <h4 className="text-[18px] lg:text-[20px] text-[#0FF1F6] ">
           GET STARTED
@@ -22,7 +22,7 @@ function Beta() {
           
               <Button
           variant="solid"
-          className="text-black bg-[#0FF1F6] mt-8  lg:mt-10 w-full md:w-fit rounded-full py-3 "
+          className="text-black bg-[#0FF1F6] mt-8  lg:mt-10 w-[92%] md:w-fit rounded-full py-3 mx-auto "
         >
           Sign Up for the Beta
         </Button>
