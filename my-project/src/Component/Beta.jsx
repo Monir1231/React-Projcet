@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@heroui/react";
+import EastIcon from '@mui/icons-material/East';
 
 function Beta() {
   return (
@@ -18,16 +19,12 @@ function Beta() {
           to new levels of performance and efficiency.
         </p>
 
-        
-          
-              <Button
+        <Button
           variant="solid"
           className="text-black bg-[#0FF1F6] mt-8  lg:mt-10 w-[92%] md:w-fit rounded-full py-3 mx-auto "
         >
-          Sign Up for the Beta
+          Sign Up for the Beta <EastIcon className="mt-1"/>
         </Button>
-         
-       
       </div>
     </section>
   );

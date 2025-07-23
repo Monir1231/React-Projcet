@@ -1,7 +1,7 @@
 import React from "react";
-import { Button } from "@heroui/react";
+import EastIcon from '@mui/icons-material/East';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import { Button } from "@heroui/react";
 
 function Hero() {
   return (
@@ -27,7 +27,7 @@ function Hero() {
             variant="solid"
             className="text-black bg-[#0FF1F6] mt-3 lg:mt-2 w-[92%] md:w-fit rounded-full py-3  mx-auto"
           >
-            Sign Up for the Beta
+            Sign Up for the Beta <EastIcon className="mt-1" />
           </Button>
         </div>
       </section>
